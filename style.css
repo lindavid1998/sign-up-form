@@ -22,7 +22,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/* font: inherit; */
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -51,3 +51,43 @@ table {
 
 /* styling */
 
+* {
+    font-family: 'Noto Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+body > div {
+    height: 100vh;
+}
+
+.banner {
+    background-image: url(damiano-lingauri-snowboard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 40%;
+    position: relative;
+}
+
+.banner-logo {
+    background-color: rgba(12, 12, 12, 0.3); 
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    top: 20%;
+}
+
+.banner-footer {
+    font-size: 0.75rem;
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+    margin: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    white-space: nowrap;
+}
