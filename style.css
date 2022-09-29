@@ -92,6 +92,10 @@ body > div {
     white-space: nowrap;
 }
 
+.content > div, .content > form {
+    padding-left: 40px;
+    padding-right: 30px;
+}
 
 .hero-text {
     padding-top: 120px;
@@ -109,4 +113,52 @@ h1 {
 h1:last-child {
     padding-top: 40px;
     padding-bottom: 60px;
+}
+
+form {
+    box-shadow: 6px 5px 5px rgb(199, 199, 199);
+    padding: 25px;
+}
+
+.form-row {
+    display: flex;
+    gap: 40px;
+}
+
+.form-row:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.form-row label {
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+    color: rgb(51, 75, 147);
+}
+
+form h1 {
+    padding-bottom: 25px;
+}
+
+input {
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    width: 200px;
+    appearance: none;
+    border-radius: 5px;
+    border: 1px solid rgb(178, 178, 178);
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(31, 65, 255);
+    box-shadow: 3px 3px 5px rgb(199, 199, 199);
+}
+
+.submit-button {
+    margin: 40px 0px;
+}
+
+input:invalid:not(:focus) {
+    border: 1px solid red;
 }
