@@ -81,6 +81,17 @@ body > div {
     top: 20%;
 }
 
+.banner-logo img {
+    width: 40px;
+}
+
+.banner-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
 .banner-footer {
     font-size: 0.75rem;
     position: absolute;
