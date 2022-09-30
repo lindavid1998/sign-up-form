@@ -133,6 +133,7 @@ form {
     letter-spacing: 0.05rem;
     font-weight: 500;
     color: rgb(51, 75, 147);
+    position: relative;
 }
 
 form h1 {
@@ -159,6 +160,28 @@ input:focus {
     margin: 40px 0px;
 }
 
-input:invalid:not(:focus) {
-    border: 1px solid red;
+input:not(:placeholder-shown):not(:focus):invalid {
+    border: 2px solid red;
+  }
+
+label > span::before {
+    content: '* required';
+    color: red;
+    font-size: 0.7rem;
+    position: absolute;
+    white-space: nowrap;
+    left: 120px;
+    top: 5px;
 }
+
+input[type="email"]:invalid:not(:focus) + span::before {
+    content: 'Format: you@email.com';
+    font-size: 0.7rem;
+    color: red;
+}
+
+/* input[type="tel"]:invalid:not(:focus) + span::before {
+    content: 'Format: xxx-xxx-xxxx';
+    font-size: 0.7rem;
+    color: red;
+} */
