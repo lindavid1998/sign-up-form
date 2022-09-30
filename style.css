@@ -98,7 +98,7 @@ body > div {
 }
 
 .hero-text {
-    padding-top: 120px;
+    padding-top: 80px;
     background-color: #e5e7eb;
     padding-left: 40px;
     padding-right: 30px;
@@ -157,7 +157,7 @@ input:focus {
 }
 
 .submit-button {
-    margin: 40px 0px;
+    margin: 30px 0px;
 }
 
 input:not(:placeholder-shown):not(:focus):invalid {
@@ -180,8 +180,41 @@ input[type="email"]:invalid:not(:focus) + span::before {
     color: red;
 }
 
-/* input[type="tel"]:invalid:not(:focus) + span::before {
+input[type="tel"]:invalid:not(:focus) + span::before {
     content: 'Format: xxx-xxx-xxxx';
     font-size: 0.7rem;
     color: red;
-} */
+}
+
+.submit-button {
+    appearance: none;
+    padding: 7px 30px;
+    font-size: 1.05rem;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px 5px rgb(148, 148, 148);
+    color: white;
+    background-color: #1982FC;
+}
+
+.submit-button:hover {
+    background-color:rgb(101, 170, 255);
+}
+
+.submit-button:active {
+    background-color: rgb(0, 74, 165);
+}
+
+.log-in a {
+    font-weight: bold;
+    color: #1982FC;
+    text-decoration: none;
+}
+
+.log-in a:visited {
+    text-decoration: none;
+}
+
+.log-in a:hover {
+    color: rgb(101, 170, 255);
+}
