@@ -171,6 +171,10 @@ input:focus {
     margin: 30px 0px;
 }
 
+.submit-button:hover {
+    cursor: pointer;
+}
+
 input:not(:placeholder-shown):not(:focus):invalid {
     border: 2px solid red;
   }
