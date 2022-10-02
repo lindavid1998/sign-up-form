@@ -254,3 +254,24 @@ input[class="error"] ~ span::before {
 input[id="pw"]:invalid:not(:focus) ~ span::before {
     content: 'Password must contain 1 uppercase, 1 lowercase, and 1 number';
 }
+
+
+@media only screen and (max-width: 700px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 20vh;
+        background-position: 50% 30%;
+    }
+
+    .log-in {
+        padding-bottom: 30px;
+    }
+}
