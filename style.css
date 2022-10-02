@@ -66,6 +66,7 @@ body > div {
 .banner {
     background-image: url(damiano-lingauri-snowboard.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     min-width: 40%;
     position: relative;
