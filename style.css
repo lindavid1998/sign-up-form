@@ -233,3 +233,13 @@ input[type="tel"]:invalid:not(:focus) + span::before {
 .log-in a:hover {
     color: rgb(101, 170, 255);
 }
+
+input[class="error"] ~ span::before {
+    content: '* Passwords do not match';
+    font-size: 0.7rem;
+    color: red;
+}
+
+.error {
+    border: 2px solid red;
+}

@@ -7,23 +7,11 @@ function checkPasswordMatch() {
 
     if (pwConfirm.value) {
         if (pw.value !== pwConfirm.value) {
-            invalid = 'border: 1px solid red;'
-            pw.style.cssText = invalid;
-            pwConfirm.style.cssText = invalid;
-    
-            if (!document.querySelector('.password p span')) {
-                span = document.createElement('SPAN')
-                span.textContent = 'Passwords do not match'
-                span.style.cssText = 'color: red; font-size: 0.7rem;'
-                p.appendChild(span)
-            }
+            pw.classList.add('error')
+            pwConfirm.classList.add('error')
         } else {
-            try {
-                document.querySelector('.password span').remove()
-            } catch {} finally {
-                pw.style.cssText = ''
-                pwConfirm.style.cssText = ''
-            }
+            pw.classList.remove('error')
+            pwConfirm.classList.remove('error')
         }
     } 
 }
