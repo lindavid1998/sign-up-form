@@ -1,4 +1,5 @@
 document.querySelector('#pw-confirm').addEventListener('blur', checkPasswordMatch)
+document.querySelector('#pw').addEventListener('blur', checkPasswordMatch)
 
 function checkPasswordMatch() {
     pw = document.getElementById('pw')

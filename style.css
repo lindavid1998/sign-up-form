@@ -234,12 +234,22 @@ input[type="tel"]:invalid:not(:focus) + span::before {
     color: rgb(101, 170, 255);
 }
 
-input[class="error"] ~ span::before {
-    content: '* Passwords do not match';
+.password p span {
+    width: 200px;
     font-size: 0.7rem;
     color: red;
+    word-wrap: normal;
+    display: block;
+}
+
+input[class="error"] ~ span::before {
+    content: '* Passwords do not match';
 }
 
 .error {
     border: 2px solid red;
+}
+
+input[id="pw"]:invalid:not(:focus) ~ span::before {
+    content: 'Password must contain 1 uppercase, 1 lowercase, and 1 number';
 }
